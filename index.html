@@ -55,40 +55,94 @@
     <div class="container">
     <div class="categories">
 
+
       <div class="products">
-        <a href="./supplieriframe.html"><img class="image1" src="./images/RegisterPage/supplier.png" alt="supplier.png"></a>
+        <a data-bs-toggle="modal" data-bs-target="#supplierModal"><img class="image1" src="./images/RegisterPage/supplier.png" alt="supplier.png"></a>
           <div class="overlay">
               <div class="text d-flex justify-content-center">
-                  <h6><a href="./supplieriframe.html" class="text-center">Register SmartDrop Suplier</a></h6>
+                  <h6><a data-bs-toggle="modal" data-bs-target="#supplierModal" class="text-center">Register SmartDrop Suplier</a></h6>
                   <a href=""><button type="button" class="btn btn-success me-md-2 text-center" >Register Now</button></a>
               </div>
           </div>
     </div>
+
+
+     <!-- MODAL FORMS -->
+   <div class="modal fade" id="supplierModal" tabindex="-1" aria-labelledby="supplierModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-black">
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body bg-black">
+            <!-- CONTENT HERE -->
+            <iframe src="https://script.google.com/macros/s/AKfycbxg14q8Tdu1dzAQT81Ba7_jKaj9lwXwJBTcb0L2_Evf6ylZkIIQC5L-1wKNgYsp8PMw/exec" frameborder="0" width="100%" height="605px" style="overflow-y: hidden;"></iframe>
+            <!-- MODAL FORMS -->
+            </div>
+        </div>
+    </div>
+</div>
       
 
         <div class="products">
-          <a href="./emoneyiframe.html"><img class="image1" src="./images/RegisterPage/store.png" alt="store.png"></a>
+          <a data-bs-toggle="modal" data-bs-target="#emoneyModal"><img class="image1" src="./images/RegisterPage/store.png" alt="store.png"></a>
             <div class="overlay">
                 <div class="text d-flex justify-content-center">
-                    <h6><a href="./emoneyiframe.html" class="text-center">Register an E-money Outlet</a></h6>
+                    <h6><a data-bs-toggle="modal" data-bs-target="#emoneyModal" class="text-center">Register an E-money Outlet</a></h6>
                     <a href=""><button type="button" class="btn btn-success me-md-2 text-center" >Register Now</button></a>
                 </div>
             </div>
         </div>
+
+
+             <!-- MODAL FORMS -->
+   <div class="modal fade" id="emoneyModal" tabindex="-1" aria-labelledby="emoneyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-black">
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body bg-black">
+            <!-- CONTENT HERE -->
+            <iframe src="https://script.google.com/macros/s/AKfycbx1CVN5npmw0r5FEs_XN4CyYKbUDNcH5VjgNnrsR42WRcAAxtFONqLCtR7aNQDZ2dy9Xg/exec" frameborder="0" width="100%" height="605px" style="overflow-y: hidden;"></iframe>
+            <!-- MODAL FORMS -->
+            </div>
+        </div>
+    </div>
+</div>
     
         <div class="products">
-            <a href="./agentiframe.html"><img class="image1" src="./images/RegisterPage/agent.png" alt="agent.png"></a>
+            <a data-bs-toggle="modal" data-bs-target="#agentModal"><img class="image1" src="./images/RegisterPage/agent.png" alt="agent.png"></a>
               <div class="overlay">
                   <div class="text d-flex justify-content-center">
-                      <h6><a href="./agentiframe.html" class="text-center">Register SmartDrop Agent</a></h6>
+                      <h6><a data-bs-toggle="modal" data-bs-target="#agentModal" class="text-center">Register SmartDrop Agent</a></h6>
                       <a href=""><button type="button" class="btn btn-success me-md-2 text-center" >Register Now</button></a>
                   </div>
               </div>
         </div>
+
+                <!-- MODAL FORMS -->
+                    <div class="modal fade" id="agentModal" tabindex="-1" aria-labelledby="agentModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-black">
+                                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body bg-black">
+                                <!-- CONTENT HERE -->
+                                <iframe src="https://script.google.com/macros/s/AKfycbzQMuYU9PWDj-zvh0rjdJaDfkgAuxy_T5UsljXwdn1wONAA3mUVF6H8bUHRh92BsEm1/exec" frameborder="0" width="100%" height="605px" style="overflow-y: hidden;"></iframe>
+                                <!-- MODAL FORMS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     
             <!-- MODAL VIDEO ADS BUTTON HERE -->
             <div class="btnVids d-flex justify-content-center">
-                <button type="button" class="btn btn-success me-md-2" data-bs-toggle="modal" data-bs-target="#videoAds">
+                <button type="button" class="btn btn-success me-md-2" data-bs-toggle="modal" data-bs-target="#videoAds" disabled>
                   Check Available Video Ads Here
                 </button>
               </div>
@@ -149,6 +203,14 @@
           </div>
             <!-- VIDEO ADS MODAL -->
   
+<!-- Login Button trigger modal -->
+ <div class="d-grid gap-2 d-inline-flex me-md-3">
+    <a data-bs-toggle="modal" data-bs-target="#supplierModal" >
+        <img src="./images/RegisterPage/supplier.png" alt="login" width="37" height="37" >
+    </a>
+  </div>
+
+
         <script>
           function IMGsrc(source) {
             document.getElementById("productimg").src = source;
@@ -158,3 +220,5 @@
   </body>
   </html>
   
+
+ 
