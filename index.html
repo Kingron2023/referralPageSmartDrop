@@ -61,7 +61,7 @@
           <div class="overlay">
               <div class="text d-flex justify-content-center">
                   <h6><a data-bs-toggle="modal" data-bs-target="#supplierModal" class="text-center">Register SmartDrop Suplier</a></h6>
-                  <a href=""><button type="button" class="btn btn-success me-md-2 text-center" >Register Now</button></a>
+                  <button type="button" class="btn btn-success me-md-2 text-center" id="suppliersForm">Share Registration</button>
               </div>
           </div>
     </div>
@@ -90,35 +90,35 @@
             <div class="overlay">
                 <div class="text d-flex justify-content-center">
                     <h6><a data-bs-toggle="modal" data-bs-target="#emoneyModal" class="text-center">Register an E-money Outlet</a></h6>
-                    <a href=""><button type="button" class="btn btn-success me-md-2 text-center" >Register Now</button></a>
+                    <button type="button" class="btn btn-success me-md-2 text-center" id="eMoneyOutletsForm">Share Registration</button>
                 </div>
             </div>
         </div>
 
 
              <!-- MODAL FORMS -->
-   <div class="modal fade" id="emoneyModal" tabindex="-1" aria-labelledby="emoneyModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header bg-black">
-            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+        <div class="modal fade" id="emoneyModal" tabindex="-1" aria-labelledby="emoneyModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header bg-black">
+                  <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
 
-            <div class="modal-body bg-black">
-            <!-- CONTENT HERE -->
-            <iframe src="https://script.google.com/macros/s/AKfycbxzRv3jFO5yk_hM8ZxBzUnPcPZsbDkkn4IlELnar1Z7BEApMnkedW5K8fA-aS8Xn9I02Q/exec" frameborder="0" width="100%" height="605px" style="overflow-y: hidden;"></iframe>
-            <!-- MODAL FORMS -->
-            </div>
-        </div>
-    </div>
-</div>
+                  <div class="modal-body bg-black">
+                  <!-- CONTENT HERE -->
+                  <iframe src="https://script.google.com/macros/s/AKfycbxzRv3jFO5yk_hM8ZxBzUnPcPZsbDkkn4IlELnar1Z7BEApMnkedW5K8fA-aS8Xn9I02Q/exec" frameborder="0" width="100%" height="605px" style="overflow-y: hidden;"></iframe>
+                  <!-- MODAL FORMS -->
+                  </div>
+              </div>
+          </div>
+      </div>
     
         <div class="products">
             <a data-bs-toggle="modal" data-bs-target="#agentModal"><img class="image1" src="./images/RegisterPage/agent.png" alt="agent.png"></a>
               <div class="overlay">
                   <div class="text d-flex justify-content-center">
                       <h6><a data-bs-toggle="modal" data-bs-target="#agentModal" class="text-center">Register SmartDrop Agent</a></h6>
-                      <a href=""><button type="button" class="btn btn-success me-md-2 text-center" >Register Now</button></a>
+                      <button type="button" class="btn btn-success me-md-2 text-center" id="agentsForm">Share Registration</button>
                   </div>
               </div>
         </div>
@@ -212,9 +212,58 @@
 
 
         <script>
-          function IMGsrc(source) {
-            document.getElementById("productimg").src = source;
-          }
+
+          // Share Button Agent's Registration
+          const suppliersForm = document.getElementById("suppliersForm");
+
+              suppliersForm.addEventListener('click', event => {
+
+                  if(navigator.share) {
+                      navigator.share({
+                          text: "SmartDrop's Supplier Registration",
+                          url: 'https://tinyurl.com/2lxesnln/'
+                      }).then(() => {
+                          console.log('link has been shared');
+                      }).catch((err) => console.error(err));
+                  }else {
+                    navigator.clipboard.writeText('https://tinyurl.com/2lxesnln/');
+                  }
+              });
+
+
+          // Share Button Emoney Outlet's Registration
+          const eMoneyOutletsForm = document.getElementById("eMoneyOutletsForm");
+
+              eMoneyOutletsForm.addEventListener('click', event => {
+
+                  if(navigator.share) {
+                      navigator.share({
+                          text: "SmartDrop's E-Money Outlet Registration",
+                          url: 'https://tinyurl.com/2nmkegr8'
+                      }).then(() => {
+                          console.log('link has been shared');
+                      }).catch((err) => console.error(err));
+                  }else {
+                    navigator.clipboard.writeText('https://tinyurl.com/2nmkegr8');
+                  }
+              });
+
+              // Share Button Agent's Registration
+              const agentsForm = document.getElementById("agentsForm");
+
+              agentsForm.addEventListener('click', event => {
+
+                  if(navigator.share) {
+                      navigator.share({
+                          text: "SmartDrop's Agent Registration",
+                          url: 'https://tinyurl.com/2f5z35wk'
+                      }).then(() => {
+                          console.log('link has been shared');
+                      }).catch((err) => console.error(err));
+                  }else {
+                    navigator.clipboard.writeText('https://tinyurl.com/2f5z35wk');
+                  }
+              });
         </script>
        
   </body>
