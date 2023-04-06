@@ -1007,6 +1007,8 @@ h6 span{
   </div>
 
 
+
+
         <script>
 
           // Share Button Agent's Registration
@@ -1014,16 +1016,9 @@ h6 span{
 
               suppliersForm.addEventListener('click', event => {
 
-                  if(navigator.share) {
-                      navigator.share({
-                          text: "SmartDrop's Supplier Registration",
-                          url: 'https://tinyurl.com/2hxeyf8b'
-                      }).then(() => {
-                          console.log('link has been shared');
-                      }).catch((err) => console.error(err));
-                  }else {
-                    navigator.clipboard.writeText('https://tinyurl.com/2hxeyf8b');
-                  }
+                  navigator.clipboard.writeText('https://tinyurl.com/2hxeyf8b');
+                  alert("Send suppliersForm Link Now");
+            
               });
 
 
@@ -1032,16 +1027,9 @@ h6 span{
 
               eMoneyOutletsForm.addEventListener('click', event => {
 
-                  if(navigator.share) {
-                      navigator.share({
-                          text: "SmartDrop's E-Money Outlet Registration",
-                          url: 'https://tinyurl.com/2e7uzmkj'
-                      }).then(() => {
-                          console.log('link has been shared');
-                      }).catch((err) => console.error(err));
-                  }else {
-                    navigator.clipboard.writeText('https://tinyurl.com/2e7uzmkj');
-                  }
+                  navigator.clipboard.writeText('https://tinyurl.com/2e7uzmkj');
+                  alert("Send eMoneyOutletsForm Link Now");
+                  
               });
 
               // Share Button Agent's Registration
@@ -1049,16 +1037,9 @@ h6 span{
 
               agentsForm.addEventListener('click', event => {
 
-                  if(navigator.share) {
-                      navigator.share({
-                          text: "SmartDrop's Agent Registration",
-                          url: 'https://tinyurl.com/2lavgedp'
-                      }).then(() => {
-                          console.log('link has been shared');
-                      }).catch((err) => console.error(err));
-                  }else {
-                    navigator.clipboard.writeText('https://tinyurl.com/2lavgedp');
-                  }
+                  navigator.clipboard.writeText('https://tinyurl.com/2lavgedp');
+                  alert("Send agentsForm Link Now");
+                  
               });
         </script>
        
@@ -1067,3 +1048,4 @@ h6 span{
   
 
  
+  https://tinyurl.com/23byqjf7
