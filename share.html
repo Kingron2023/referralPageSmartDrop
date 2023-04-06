@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+
+            padding: 10px;
+            background-color: rgb(44, 71, 4);
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    
+
+
+        <button @click="Share">Share</button>
+
+
+    <script setup>
+        const share  = () => {
+
+            if(navigator.share) {
+                navigator.share({
+                text: "check this site",
+                url: "https://kingron2023.github.io/referralPageSmartDrop/",
+                title: "Smartdrop"
+            })
+            } else {
+                navigator.clipboard.writeText("")
+            }
+            
+        }
+    </script>
+</body>
+</html>
