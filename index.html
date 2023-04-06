@@ -857,7 +857,7 @@ h6 span{
           <div class="overlay">
               <div class="text d-flex justify-content-center">
                   <h6><a data-bs-toggle="modal" data-bs-target="#supplierModal" class="text-center">Register SmartDrop Suplier</a></h6>
-                  <button type="button" class="btn btn-success me-md-2 text-center" id="suppliersForm">Share</button>
+                  <button type="button" class="btn btn-success me-md-2 text-center" data-bs-toggle="modal" data-bs-target="#supplierShareModal">Share</button>
               </div>
           </div>
     </div>
@@ -879,6 +879,26 @@ h6 span{
         </div>
     </div>
 </div>
+
+     <!-- MODAL Share FORMS -->
+     <div class="modal fade" id="supplierShareModal" tabindex="-1" aria-labelledby="supplierShareModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header bg-black">
+              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+              <div class="modal-body bg-black">
+              <!-- CONTENT HERE -->
+              <img src="./images/QR/supplierQR.jpg" class="container-fluid">
+              <p class="text-center fs-4 text-white">https://tinyurl.com/2hxeyf8b</p>
+              
+              <!-- MODAL FORMS -->
+              </div>
+          </div>
+      </div>
+  </div>
+
       
 
         <div class="products">
@@ -886,7 +906,7 @@ h6 span{
             <div class="overlay">
                 <div class="text d-flex justify-content-center">
                     <h6><a data-bs-toggle="modal" data-bs-target="#emoneyModal" class="text-center">Register an E-money Outlet</a></h6>
-                    <button type="button" class="btn btn-success me-md-2 text-center" id="eMoneyOutletsForm">Share</button>
+                    <button type="button" class="btn btn-success me-md-2 text-center"  data-bs-toggle="modal" data-bs-target="#emoneyShareModal">Share</button>
                 </div>
             </div>
         </div>
@@ -908,13 +928,32 @@ h6 span{
               </div>
           </div>
       </div>
+
+           <!-- MODAL Share FORMS -->
+     <div class="modal fade" id="emoneyShareModal" tabindex="-1" aria-labelledby="emoneyShareModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header bg-black">
+              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+              <div class="modal-body bg-black">
+              <!-- CONTENT HERE -->
+              <img src="./images/QR/emoneyQR.jpg" class="container-fluid">
+              <p class="text-center fs-4 text-white">https://tinyurl.com/2e7uzmkj</p>
+              
+              <!-- MODAL FORMS -->
+              </div>
+          </div>
+      </div>
+  </div>
     
         <div class="products">
             <a data-bs-toggle="modal" data-bs-target="#agentModal"><img class="image1" src="./images/RegisterPage/agent.png" alt="agent.png"></a>
               <div class="overlay">
                   <div class="text d-flex justify-content-center">
                       <h6><a data-bs-toggle="modal" data-bs-target="#agentModal" class="text-center">Register SmartDrop Agent</a></h6>
-                      <button type="button" class="btn btn-success me-md-2 text-center" id="agentsForm">Share</button>
+                      <button type="button" class="btn btn-success me-md-2 text-center" data-bs-toggle="modal" data-bs-target="#agentShareModal">Share</button>
                   </div>
               </div>
         </div>
@@ -930,6 +969,25 @@ h6 span{
                                 <div class="modal-body bg-black">
                                 <!-- CONTENT HERE -->
                                 <iframe src="https://script.google.com/macros/s/AKfycbyBzGRbxY45ceqQRax72-2LqvzLk5HG9Vell_F2j6SzAxhjhYYlbvP0iRZR5mNXm9_7/exec" frameborder="0" width="100%" height="605px" style="overflow-y: hidden;"></iframe>
+                                <!-- MODAL FORMS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- MODAL Share FORMS -->
+                      <div class="modal fade" id="agentShareModal" tabindex="-1" aria-labelledby="agentShareModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-black">
+                                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                    
+                                <div class="modal-body bg-black">
+                                <!-- CONTENT HERE -->
+                                <img src="./images/QR/agentQR.jpg" class="container-fluid">
+                                <p class="text-center fs-4 text-white">https://tinyurl.com/2lavgedp</p>
+                                
                                 <!-- MODAL FORMS -->
                                 </div>
                             </div>
@@ -1007,45 +1065,9 @@ h6 span{
   </div>
 
 
-
-
-        <script>
-
-          // Share Button Agent's Registration
-          const suppliersForm = document.getElementById("suppliersForm");
-
-              suppliersForm.addEventListener('click', event => {
-
-                  navigator.clipboard.writeText('https://tinyurl.com/2hxeyf8b');
-                  alert("Send suppliersForm Link Now");
-            
-              });
-
-
-          // Share Button Emoney Outlet's Registration
-          const eMoneyOutletsForm = document.getElementById("eMoneyOutletsForm");
-
-              eMoneyOutletsForm.addEventListener('click', event => {
-
-                  navigator.clipboard.writeText('https://tinyurl.com/2e7uzmkj');
-                  alert("Send eMoneyOutletsForm Link Now");
-                  
-              });
-
-              // Share Button Agent's Registration
-              const agentsForm = document.getElementById("agentsForm");
-
-              agentsForm.addEventListener('click', event => {
-
-                  navigator.clipboard.writeText('https://tinyurl.com/2lavgedp');
-                  alert("Send agentsForm Link Now");
-                  
-              });
-        </script>
        
   </body>
   </html>
   
 
  
-  https://tinyurl.com/23byqjf7
